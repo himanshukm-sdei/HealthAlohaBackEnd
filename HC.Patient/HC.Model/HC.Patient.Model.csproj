@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Payroll\**" />
+    <EmbeddedResource Remove="Payroll\**" />
+    <None Remove="Payroll\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="MyViewModelBinder.cs" />
+    <Compile Remove="PayrollBreaktime\PayrollBreakTimeDetailsModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Payroll\HolidaysModel.cs" />
+    <Compile Include="Payroll\StaffPayrollRateForActivityModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.DynamicLinq" Version="1.0.4.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.0.1" />
+    <!--<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.0.1" />-->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.1" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.0.7.12" />
+    <PackageReference Include="Twilio.AspNet.Core" Version="5.33.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\HC.Common\HC.Model\HC.Model.csproj" />
+    <ProjectReference Include="..\HC.Entity\HC.Patient.Entity.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="PayrollBreaktime\" />
+  </ItemGroup>
+
+</Project>

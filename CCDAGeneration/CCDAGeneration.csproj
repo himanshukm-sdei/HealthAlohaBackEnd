@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="HL7SDK">
+      <HintPath>ThirdPartyDll\HL7SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="HL7SDK.Xml.Cda">
+      <HintPath>ThirdPartyDll\HL7SDK.Xml.Cda.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

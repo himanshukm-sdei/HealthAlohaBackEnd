@@ -1,0 +1,67 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="IRepositories\Billing\**" />
+    <EmbeddedResource Remove="IRepositories\Billing\**" />
+    <None Remove="IRepositories\Billing\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="EntityRepository.cs" />
+    <Compile Remove="HullTypeRepository.cs" />
+    <Compile Remove="Interfaces\IEntityRepository.cs" />
+    <Compile Remove="Interfaces\IHullTypeRepository.cs" />
+    <Compile Remove="Interfaces\IRoleRepository.cs" />
+    <Compile Remove="Interfaces\ISecUserRepository.cs" />
+    <Compile Remove="Interfaces\IUserRepository.cs" />
+    <Compile Remove="Interfaces\IUserRoleRepository.cs" />
+    <Compile Remove="IRepositories\EDI\IClaim835BatchRepository.cs" />
+    <Compile Remove="IRepositories\EDI\IClaim837BatchRepository.cs" />
+    <Compile Remove="IRepositories\EDI\IClaim837ClaimRepository.cs" />
+    <Compile Remove="IRepositories\EDI\IClaim837ServiceLineRepository.cs" />
+    <Compile Remove="IRepositories\Payroll\IPayrollBreakTimeDetailsRepository.cs" />
+    <Compile Remove="IRepositories\Payroll\IPayrollBreaktimeRepository.cs" />
+    <Compile Remove="IRepositories\Payroll\IPayrollGroupRepository.cs" />
+    <Compile Remove="Repositories\EDI\Claim835BatchRepository.cs" />
+    <Compile Remove="Repositories\EDI\Claim837BatchRepository.cs" />
+    <Compile Remove="Repositories\EDI\Claim837ClaimRepository.cs" />
+    <Compile Remove="Repositories\EDI\Claim837ServiceLineRepository.cs" />
+    <Compile Remove="Repositories\Payroll\PayrollBreakTimeDetailsRepository.cs" />
+    <Compile Remove="Repositories\Payroll\PayrollBreaktimeRepository.cs" />
+    <Compile Remove="Repositories\Payroll\PayrollGroupRepository.cs" />
+    <Compile Remove="RoleRepository.cs" />
+    <Compile Remove="SecUserRepository.cs" />
+    <Compile Remove="UserRepository.cs" />
+    <Compile Remove="UserRoleRepository.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CoreCompat.System.Drawing" Version="1.0.0-beta006" />
+    <PackageReference Include="DataTables.AspNet.Core" Version="2.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.DynamicLinq" Version="1.0.4.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.0.1" />
+    <!--<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.0.1" />-->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.1" />
+    <PackageReference Include="PdfSharp" Version="1.50.4619-beta4c" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.0.7.12" />
+    <PackageReference Include="Twilio.AspNet.Core" Version="5.33.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\CCDAGeneration\CCDAGeneration.csproj" />
+    <ProjectReference Include="..\..\HC.Common\HC.Common\HC.Common.csproj" />
+    <ProjectReference Include="..\..\HC.Common\HC.Repositories\HC.Repositories.csproj" />
+    <ProjectReference Include="..\HC.Data\HC.Patient.Data.csproj" />
+    <ProjectReference Include="..\HC.Entity\HC.Patient.Entity.csproj" />
+    <ProjectReference Include="..\HC.Model\HC.Patient.Model.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,828 @@
+<?xml version='1.0' encoding='UTF-8'?><?xml-stylesheet type='text/xsl' href='CDA.xsl'?><ClinicalDocument xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" moodCode="EVN" xmlns="urn:hl7-org:v3">
+  <realmCode code="US" />
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+  <templateId root="2.16.840.1.113883.10.20.22.1.1" />
+  <id root="2.16.840.1.113883.9.123" extension="c266" />
+  <code code="11488-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Consultation note" />
+  <title>PatientSummary</title>
+  <effectiveTime value="20180307045234" />
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" />
+  <languageCode code="en-US" />
+  <setId root="2.16.840.1.113883.19.7" extension="BB35" />
+  <versionNumber value="1" />
+  <recordTarget typeCode="RCT" contextControlCode="OP">
+    <patientRole classCode="PAT">
+      <id root="2.16.840.1.113883.19.5" extension="SSN-N/A" />
+      <addr>
+        <streetAddressLine>123 Homestead Dr</streetAddressLine>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <postalCode>22177</postalCode>
+      </addr>
+      <telecom nullFlavor="UNK" />
+      <patient classCode="PSN" determinerCode="INSTANCE">
+        <name>
+          <given>Anika</given>
+          <family>Calhoun</family>
+        </name>
+        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" />
+        <birthTime value="19840728" />
+        <raceCode code="2054-5" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" displayName="Black or African American" />
+        <ethnicGroupCode nullFlavor="UNK" />
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author typeCode="AUT" contextControlCode="OP">
+    <time value="20180307000000" />
+    <assignedAuthor classCode="ASSIGNED">
+      <id root="2.16.840.1.113883.4.6" extension="999999" />
+      <code code="200000000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC" displayName="Allopathic &amp;amp; Osteopathic Physicians" />
+      <addr>
+        <streetAddressLine>111 N Chestnut St, Suite 302</streetAddressLine>
+        <city>Winston-Salem</city>
+        <state>NC</state>
+        <country>US</country>
+        <postalCode>27101</postalCode>
+      </addr>
+      <telecom value="336-793-0622" use="WP" />
+      <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+        <name>
+          <given>OnceLogix, LLC</given>
+        </name>
+      </assignedPerson>
+    </assignedAuthor>
+  </author>
+  <dataEnterer typeCode="ENT" contextControlCode="OP">
+    <assignedEntity classCode="ASSIGNED">
+      <id root="2.16.840.1.113883.4.6" extension="999999943252" />
+      <code code="200000000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC" displayName="Allopathic &amp;amp; Osteopathic Physicians" />
+      <addr>
+        <streetAddressLine>111 N Chestnut St, Suite 302</streetAddressLine>
+        <city>Winston-Salem</city>
+        <state>NC</state>
+        <country>US</country>
+        <postalCode>27101</postalCode>
+      </addr>
+      <telecom value="336-793-0622" use="WP" />
+      <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+        <name>
+          <given>OnceLogix, LLC</given>
+        </name>
+      </assignedPerson>
+    </assignedEntity>
+  </dataEnterer>
+  <informant typeCode="INF" contextControlCode="OP">
+    <assignedEntity classCode="ASSIGNED">
+      <id root="2.16.840.1.113883.4.6" extension="KP00017" />
+      <addr>
+        <streetAddressLine>111 N Chestnut St, Suite 302</streetAddressLine>
+        <city>Winston-Salem</city>
+        <state>NC</state>
+        <country>US</country>
+        <postalCode>27101</postalCode>
+      </addr>
+      <telecom value="336-793-0622" use="WP" />
+      <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+        <name>
+          <given>OnceLogix, LLC</given>
+        </name>
+      </assignedPerson>
+    </assignedEntity>
+  </informant>
+  <custodian typeCode="CST">
+    <assignedCustodian classCode="ASSIGNED">
+      <representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE">
+        <id root="2.16.840.1.113883.4.6" />
+        <name>OnceLogix, LLC</name>
+        <telecom value="336-793-0622" use="WP" />
+        <addr>
+          <streetAddressLine>111 N Chestnut St, Suite 302</streetAddressLine>
+          <city>Winston-Salem</city>
+          <state>NC</state>
+          <postalCode>27101</postalCode>
+          <country>US</country>
+        </addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <informationRecipient>
+    <intendedRecipient>
+      <informationRecipient classCode="PSN" determinerCode="INSTANCE">
+        <name>
+          <given>OnceLogix, LLC</given>
+        </name>
+      </informationRecipient>
+      <receivedOrganization classCode="ORG" determinerCode="INSTANCE">
+        <name>OnceLogix, LLC</name>
+      </receivedOrganization>
+    </intendedRecipient>
+  </informationRecipient>
+  <legalAuthenticator typeCode="LA" contextControlCode="OP">
+    <time value="20180307000000" />
+    <signatureCode code="S" />
+    <assignedEntity classCode="ASSIGNED">
+      <id root="2.16.840.1.113883.4.6" />
+      <code code="207QA0505X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC" displayName="Adult Medicine" />
+      <addr>
+        <streetAddressLine>111 N Chestnut St, Suite 302</streetAddressLine>
+        <city>Winston-Salem</city>
+        <state>NC</state>
+        <country>US</country>
+        <postalCode>27101</postalCode>
+      </addr>
+      <telecom value="336-793-0622" use="WP" />
+      <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+        <name>
+          <given>OnceLogix, LLC</given>
+        </name>
+      </assignedPerson>
+    </assignedEntity>
+  </legalAuthenticator>
+  <authenticator typeCode="AUTHEN">
+    <time value="20180307000000" />
+    <signatureCode code="S" />
+    <assignedEntity classCode="ASSIGNED">
+      <id root="2.16.840.1.113883.4.6" />
+      <addr>
+        <streetAddressLine>111 N Chestnut St, Suite 302</streetAddressLine>
+        <city>Winston-Salem</city>
+        <state>NC</state>
+        <country>US</country>
+        <postalCode>27101</postalCode>
+      </addr>
+      <telecom value="336-793-0622" use="WP" />
+      <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+        <name>
+          <given>OnceLogix, LLC</given>
+        </name>
+      </assignedPerson>
+    </assignedEntity>
+  </authenticator>
+  <participant typeCode="IND" contextControlCode="OP">
+    <time>
+      <low value="20180307000000" />
+      <high value="20180307000000" />
+    </time>
+    <associatedEntity classCode="CAREGIVER">
+      <code code="MTH" codeSystem="2.16.840.1.113883.5.111" />
+      <addr>
+        <streetAddressLine>111 N Chestnut St, Suite 302</streetAddressLine>
+        <city>Winston-Salem</city>
+        <state>NC</state>
+        <country>US</country>
+        <postalCode>27101</postalCode>
+      </addr>
+      <telecom value="336-793-0622" use="WP" />
+      <associatedPerson classCode="PSN" determinerCode="INSTANCE">
+        <name>
+          <given>OnceLogix, LLC</given>
+        </name>
+      </associatedPerson>
+    </associatedEntity>
+  </participant>
+  <documentationOf typeCode="DOC">
+    <serviceEvent classCode="PCPR" moodCode="EVN">
+      <code code="99214" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT4" displayName="Office Visit" />
+      <effectiveTime>
+        <low value="20160518000000" />
+      </effectiveTime>
+      <performer typeCode="PRF">
+        <functionCode code="PP" codeSystem="2.16.840.1.113883.12.443" codeSystemName="Provider Role" displayName="Care Provider" />
+        <time>
+          <low value="20160518000000" />
+        </time>
+        <assignedEntity classCode="ASSIGNED">
+          <id root="2.16.840.1.113883.4.6" extension="111111111" assigningAuthorityName="NPI" />
+          <addr>
+            <streetAddressLine>123 Homestead Dr</streetAddressLine>
+            <city>Philadelphia</city>
+            <state>PA</state>
+            <country>US</country>
+            <postalCode>22177</postalCode>
+          </addr>
+          <telecom value="mailto:info@drummondgroup.com" />
+          <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+            <name>
+              <family>Lakenan Jumper</family>
+            </name>
+          </assignedPerson>
+          <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+            <id root="2.16.840.1.113883.4.2" extension="1" assigningAuthorityName="TIN" />
+            <id root="2.16.840.1.113883.4.336" extension="54321" assigningAuthorityName="CCN" />
+          </representedOrganization>
+        </assignedEntity>
+      </performer>
+      <performer typeCode="PRF">
+        <functionCode code="SP" codeSystem="2.16.840.1.113883.12.443" codeSystemName="Provider Role" displayName="Care Provider" />
+        <time>
+          <low value="20171026000000" />
+        </time>
+        <assignedEntity classCode="ASSIGNED">
+          <id root="2.16.840.1.113883.4.6" extension="111111111" assigningAuthorityName="NPI" />
+          <addr>
+            <postalCode nullFlavor="UNK" />
+          </addr>
+          <telecom value="mailto:info@drummondgroup.com" />
+          <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+            <name>
+              <family>William Rich</family>
+            </name>
+          </assignedPerson>
+          <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+            <id root="2.16.840.1.113883.4.2" extension="1" assigningAuthorityName="TIN" />
+            <id root="2.16.840.1.113883.4.336" extension="54321" assigningAuthorityName="CCN" />
+          </representedOrganization>
+        </assignedEntity>
+      </performer>
+      <performer typeCode="PRF">
+        <functionCode code="SP" codeSystem="2.16.840.1.113883.12.443" codeSystemName="Provider Role" displayName="Care Provider" />
+        <time>
+          <low value="20180214000000" />
+        </time>
+        <assignedEntity classCode="ASSIGNED">
+          <id root="2.16.840.1.113883.4.6" extension="111111111" assigningAuthorityName="NPI" />
+          <addr>
+            <postalCode nullFlavor="UNK" />
+          </addr>
+          <telecom value="mailto:info@drummondgroup.com" />
+          <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+            <name>
+              <family>Trinity Manning</family>
+            </name>
+          </assignedPerson>
+          <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+            <id root="2.16.840.1.113883.4.2" extension="1" assigningAuthorityName="TIN" />
+            <id root="2.16.840.1.113883.4.336" extension="54321" assigningAuthorityName="CCN" />
+          </representedOrganization>
+        </assignedEntity>
+      </performer>
+    </serviceEvent>
+  </documentationOf>
+  <componentOf>
+    <encompassingEncounter classCode="ENC" moodCode="EVN">
+      <id root="2.16.840.1.113883.4.6" />
+      <code code="" codeSystem="2.16.840.1.113883.6.96" displayName="" />
+      <effectiveTime>
+        <low />
+        <high />
+      </effectiveTime>
+      <dischargeDispositionCode code="01" codeSystem="2.16.840.1.113883.12.112" codeSystemName="HL7 Discharge Disposition" displayName="Routine Discharge" />
+      <responsibleParty typeCode="RESP">
+        <assignedEntity classCode="ASSIGNED">
+          <id root="2.16.840.1.113883.4.6" />
+          <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+            <name>
+              <family></family>
+            </name>
+          </assignedPerson>
+        </assignedEntity>
+      </responsibleParty>
+      <encounterParticipant typeCode="ADM">
+        <assignedEntity classCode="ASSIGNED">
+          <id root="2.16.840.1.113883.4.6" />
+          <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+            <name>
+              <family></family>
+            </name>
+          </assignedPerson>
+        </assignedEntity>
+      </encounterParticipant>
+      <location>
+        <healthCareFacility>
+          <id root="2.16.540.1.113883.19.2" />
+        </healthCareFacility>
+      </location>
+    </encompassingEncounter>
+  </componentOf>
+  <component>
+    <structuredBody classCode="DOCBODY" moodCode="EVN">
+      <component>
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.2.6.1" />
+          <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ALLERGIES" />
+          <title>ALLERGIES, ADVERSE REACTIONS, ALERTS</title>
+          <text mediaType="text/x-hl7-text+xml">
+            <paragraph>N/A</paragraph>
+          </text>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.30" />
+              <id nullFlavor="UNK" />
+              <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts" />
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low />
+                <high />
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.7" />
+                  <id root="1.3.6.1.4.1.22812.11.0.100610.4.10.2" extension="41700060" />
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                  <statusCode code="completed" />
+                  <effectiveTime>
+                    <low />
+                  </effectiveTime>
+                  <value xsi:type="CD" nullFlavor="UNK" />
+                  <participant typeCode="CSM" contextControlCode="OP">
+                    <participantRole classCode="MANU">
+                      <playingEntity classCode="MMAT" determinerCode="INSTANCE">
+                        <code nullFlavor="UNK" />
+                        <name>N/A</name>
+                      </playingEntity>
+                    </participantRole>
+                  </participant>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.2.5.1" />
+          <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PROBLEM LIST" />
+          <title>PROBLEMS</title>
+          <text mediaType="text/x-hl7-text+xml">
+            <content ID="noproblems1">No known problems</content>
+          </text>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3" />
+              <id root="0c739776-cf34-460b-8886-a183f038f57c" />
+              <code code="CONC" codeSystem="2.16.840.1.113883.5.6" codeSystemName="HL7ActClass" displayName="Concern" />
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low />
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                  <id root="380b380e-ae90-4d50-8d6c-7de72fade316" />
+                  <code code="55607006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Problem" />
+                  <text>
+                    <reference value="#noproblems1" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime>
+                    <low />
+                    <high />
+                  </effectiveTime>
+                  <value xsi:type="CD" code="55607006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Problem" />
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.2.17" />
+          <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social History" />
+          <title>Social History</title>
+          <text mediaType="text/x-hl7-text+xml">
+            <content>Social History N/A</content>
+          </text>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.78" />
+              <id root="95a5a7f9-0531-432f-8e61-4ac429540fc3" />
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Assertion" />
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low />
+                <high />
+              </effectiveTime>
+              <value xsi:type="CD" nullFlavor="UNK" />
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.2.4.1" />
+          <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="VITAL SIGNS" />
+          <title>Vital Signs</title>
+          <text mediaType="text/x-hl7-text+xml">
+            <paragraph>N/A</paragraph>
+          </text>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" />
+              <id nullFlavor="UNK" />
+              <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Vital signs" />
+              <statusCode code="completed" />
+              <effectiveTime value="20180307045234" />
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                  <id nullFlavor="UNK" />
+                  <code nullFlavor="UNK" />
+                  <text>
+                    <reference nullFlavor="UNK" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime nullFlavor="NA" />
+                  <value xsi:type="PQ" nullFlavor="UNK" />
+                  <interpretationCode nullFlavor="UNK" />
+                  <referenceRange typeCode="REFV">
+                    <observationRange moodCode="EVN.CRT">
+                      <text></text>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.2.1.1" />
+          <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF MEDICATION USE" />
+          <title>MEDICATIONS</title>
+          <text mediaType="text/x-hl7-text+xml">
+            <paragraph>N/A</paragraph>
+          </text>
+          <entry>
+            <substanceAdministration nullFlavor="NI" classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" />
+              <id root="2.16.840.1.113883.3.3208.9999" />
+              <statusCode code="completed" />
+              <effectiveTime xsi:type="IVL_TS">
+                <low nullFlavor="NA" />
+                <high nullFlavor="NA" />
+              </effectiveTime>
+              <consumable typeCode="CSM">
+                <manufacturedProduct nullFlavor="NI" classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" />
+                  <manufacturedMaterial classCode="MMAT">
+                    <code nullFlavor="NI" />
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.2.14" />
+          <code code="47420-5" codeSystem="2.16.840.1.113883.6.1" />
+          <title>FUNCTIONAL STATUS</title>
+          <text mediaType="text/x-hl7-text+xml">
+            <paragraph>N/A</paragraph>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.2.22.1" />
+          <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" />
+          <title>ENCOUNTERS</title>
+          <text mediaType="text/x-hl7-text+xml">
+            <paragraph>N/A</paragraph>
+          </text>
+          <entry>
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.49" />
+              <id root="a50ec482-9df6-45e3-8638-58b7c3711559" />
+              <code code="99212" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT" displayName="Outpatient Visit" />
+              <effectiveTime>
+                <low />
+                <high />
+              </effectiveTime>
+              <performer>
+                <assignedEntity classCode="ASSIGNED">
+                  <id root="83db3a3c-e902-4cb6-9e8f-b9401bfe4379" />
+                  <code code="59058001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="General Physician" />
+                </assignedEntity>
+              </performer>
+              <participant typeCode="LOC" contextControlCode="OP">
+                <templateId root="2.16.840.1.113883.10.20.22.4.32" />
+                <participantRole classCode="SDLOC">
+                  <code code="1117-1" codeSystem="2.16.840.1.113883.6.259" codeSystemName="HealthcareServiceLocation" displayName="Family Medicine Clinic" />
+                  <addr>
+                    <streetAddressLine>NA</streetAddressLine>
+                    <city>NA</city>
+                    <state>NA</state>
+                    <country>US</country>
+                    <postalCode>NA</postalCode>
+                  </addr>
+                  <telecom value="NA" use="WP" />
+                </participantRole>
+              </participant>
+              <entryRelationship typeCode="RSON">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                  <id root="51539010-d169-4a0e-8db5-1dc0daca2a50" />
+                  <code code="404684003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Finding" />
+                  <statusCode code="completed" />
+                  <effectiveTime>
+                    <low />
+                    <high />
+                  </effectiveTime>
+                  <value xsi:type="CD" code="99201" codeSystem="2.16.840.1.113883.6.96" displayName="Visit" />
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="SUBJ">
+                <act classCode="ACT" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.80" />
+                  <id root="5dcb2783-c5de-45ba-9c63-6875dd539135" />
+                  <code code="29308-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ENCOUNTER DIAGNOSIS" />
+                  <statusCode code="active" />
+                  <effectiveTime>
+                    <low />
+                    <high />
+                  </effectiveTime>
+                  <entryRelationship typeCode="SUBJ">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                      <id root="d1283be0-5bdd-4441-bcf8-6554b153cdc0" />
+                      <code code="409586006" codeSystem="2.16.840.1.113883.6.96" displayName="Complaint" />
+                      <statusCode code="completed" />
+                      <effectiveTime>
+                        <low />
+                        <high />
+                      </effectiveTime>
+                      <value xsi:type="CD" code="99201" codeSystem="2.16.840.1.113883.6.96" displayName="visit" />
+                    </observation>
+                  </entryRelationship>
+                </act>
+              </entryRelationship>
+            </encounter>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.2.3.1" />
+          <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Lab Results" />
+          <title>Lab Results</title>
+          <text mediaType="text/x-hl7-text+xml">
+            <paragraph>N/A</paragraph>
+          </text>
+          <entry>
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1" />
+              <id nullFlavor="NA" />
+              <code nullFlavor="NA" />
+              <statusCode code="completed" />
+              <effectiveTime value="20180307045234" />
+              <component>
+                <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+                  <id nullFlavor="NA" />
+                  <code code="26436-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Laboratory Studies" />
+                  <statusCode code="completed" />
+                  <effectiveTime value="20180307045234" />
+                  <value xsi:type="PQ" value="0" />
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.2.13" />
+          <code code="46239-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="REASON FOR VISIT + CHIEF COMPLAINT" />
+          <title>REASON FOR VISIT/CHIEF COMPLAINT</title>
+          <text mediaType="text/x-hl7-text+xml">
+            <paragraph>N/A</paragraph>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.2.2" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.2.1" />
+          <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of immunizations" />
+          <title>Immunizations</title>
+          <text mediaType="text/x-hl7-text+xml">N/A</text>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.52" />
+              <id nullFlavor="NA" />
+              <statusCode code="Completed" />
+              <effectiveTime value="20180307045234" />
+              <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.54" />
+                  <manufacturedMaterial classCode="MMAT">
+                    <code nullFlavor="NA" />
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.2.10" />
+          <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan" />
+          <title>Care Plans</title>
+          <text mediaType="text/x-hl7-text+xml">
+            <table width="100%" border="1">
+              <thead>
+                <tr>
+                  <th>Planned Activity</th>
+                  <th>Planned Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Goal: Enroll in college, Instructions: Pursue a career as an educator</td>
+                  <td>8/31/2017 12:00:00 AM</td>
+                </tr>
+                <tr>
+                  <td>Goal: Individual will receive Respite Care on a periodic basis., Instructions: Individuals parents are their primary caregivers. Individual will receive Respite Care periodically to give caregivers a break in daily care.</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Goal: Relocate to Washington, Instructions: Move to a better climate of weather</td>
+                  <td>9/25/2017 12:00:00 AM</td>
+                </tr>
+                <tr>
+                  <td>Goal: Try a new hairstyle , Instructions: Try a new shorter look for summer with highlights</td>
+                  <td>8/30/2017 12:00:00 AM</td>
+                </tr>
+                <tr>
+                  <td>Goal: Anger management, Instructions: To control outburst when in disagreement </td>
+                  <td>9/25/2017 12:00:00 AM</td>
+                </tr>
+                <tr>
+                  <td>Goal: Arriving to work on time, Instructions: Decrease the number of days tardy for work</td>
+                  <td>9/15/2017 12:00:00 AM</td>
+                </tr>
+                <tr>
+                  <td>Goal: Anger Management, Instructions: To discontinue outburst when angry</td>
+                  <td>9/19/2017 12:00:00 AM</td>
+                </tr>
+                <tr>
+                  <td>Goal: Purchase New Cell Phone, Instructions: Current phone does not ring anymore need upgrade</td>
+                  <td>9/19/2017 12:00:00 AM</td>
+                </tr>
+                <tr>
+                  <td>Goal: Send Cookie Far Far Away, Instructions: Buy Cookie A one way ticket to the Bermuda Triangle</td>
+                  <td>12/31/2017 12:00:00 AM</td>
+                </tr>
+                <tr>
+                  <td>Goal: Buy a Horse, Instructions: Buy a riding horse for recreation</td>
+                  <td>5/15/2018 12:00:00 AM</td>
+                </tr>
+                <tr>
+                  <td>Goal: Buy a New Winter Coat, Instructions: Buy a New Red Coat from Burlington</td>
+                  <td>3/14/2018 12:00:00 AM</td>
+                </tr>
+                <tr>
+                  <td>Goal: testing, Instructions: testingtesting</td>
+                  <td>2/22/2018 12:00:00 AM</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.20" />
+              <id root="5f23746d-fd90-402c-8bc8-9a91851696a8" />
+              <code code="409073007" codeSystem="2.16.840.1.113883.6.96" displayName="instruction" />
+              <text>Goal:Enroll in college Instructions:Pursue a career as an educator</text>
+              <statusCode code="completed" />
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.20" />
+              <id root="ba2c64f2-f6a7-42fe-b72c-9147b82cd3c7" />
+              <code code="409073007" codeSystem="2.16.840.1.113883.6.96" displayName="instruction" />
+              <text>Goal:Individual will receive Respite Care on a periodic basis. Instructions:Individuals parents are their primary caregivers. Individual will receive Respite Care periodically to give caregivers a break in daily care.</text>
+              <statusCode code="completed" />
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.20" />
+              <id root="03c45aa1-c50b-4751-b6ed-51827625e7d1" />
+              <code code="409073007" codeSystem="2.16.840.1.113883.6.96" displayName="instruction" />
+              <text>Goal:Relocate to Washington Instructions:Move to a better climate of weather</text>
+              <statusCode code="completed" />
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.20" />
+              <id root="0186a842-bad1-41ad-9fdf-c4b9d9fbb944" />
+              <code code="409073007" codeSystem="2.16.840.1.113883.6.96" displayName="instruction" />
+              <text>Goal:Try a new hairstyle  Instructions:Try a new shorter look for summer with highlights</text>
+              <statusCode code="completed" />
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.20" />
+              <id root="5677f1d4-bee6-4522-a252-7c15e58d0e51" />
+              <code code="409073007" codeSystem="2.16.840.1.113883.6.96" displayName="instruction" />
+              <text>Goal:Anger management Instructions:To control outburst when in disagreement </text>
+              <statusCode code="completed" />
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.20" />
+              <id root="9ca4677d-051a-437d-bc77-866aab744d62" />
+              <code code="409073007" codeSystem="2.16.840.1.113883.6.96" displayName="instruction" />
+              <text>Goal:Arriving to work on time Instructions:Decrease the number of days tardy for work</text>
+              <statusCode code="completed" />
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.20" />
+              <id root="7c5d39df-85a5-4527-9b3b-b80a8b1edf6e" />
+              <code code="409073007" codeSystem="2.16.840.1.113883.6.96" displayName="instruction" />
+              <text>Goal:Anger Management Instructions:To discontinue outburst when angry</text>
+              <statusCode code="completed" />
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.20" />
+              <id root="864ba735-03cc-4d8e-bcd8-d63587a59a43" />
+              <code code="409073007" codeSystem="2.16.840.1.113883.6.96" displayName="instruction" />
+              <text>Goal:Purchase New Cell Phone Instructions:Current phone does not ring anymore need upgrade</text>
+              <statusCode code="completed" />
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.20" />
+              <id root="0885d40f-ade1-4b30-a3a0-277011bdf749" />
+              <code code="409073007" codeSystem="2.16.840.1.113883.6.96" displayName="instruction" />
+              <text>Goal:Send Cookie Far Far Away Instructions:Buy Cookie A one way ticket to the Bermuda Triangle</text>
+              <statusCode code="completed" />
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.20" />
+              <id root="0b206734-1135-45c8-aaea-3f29ec8c6c0b" />
+              <code code="409073007" codeSystem="2.16.840.1.113883.6.96" displayName="instruction" />
+              <text>Goal:Buy a Horse Instructions:Buy a riding horse for recreation</text>
+              <statusCode code="completed" />
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.20" />
+              <id root="1a82327f-2002-496a-bede-a25be38811d5" />
+              <code code="409073007" codeSystem="2.16.840.1.113883.6.96" displayName="instruction" />
+              <text>Goal:Buy a New Winter Coat Instructions:Buy a New Red Coat from Burlington</text>
+              <statusCode code="completed" />
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.20" />
+              <id root="fcfde9d1-e51e-4e6c-849e-6c5f76a3dcb6" />
+              <code code="409073007" codeSystem="2.16.840.1.113883.6.96" displayName="instruction" />
+              <text>Goal:testing Instructions:testingtesting</text>
+              <statusCode code="completed" />
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.1" />
+          <code code="42349-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="REASON FOR REFERRAL" />
+          <title>REASON FOR REFERRAL</title>
+          <text mediaType="text/x-hl7-text+xml">
+            <paragraph></paragraph>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.2.7" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.7.1" />
+          <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PROCEDURES" />
+          <title>PROCEDURES</title>
+          <text mediaType="text/x-hl7-text+xml">N/A</text>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.13" />
+              <id root="2dff2190-fbbf-4fe5-995f-250f0b1e8bdf" />
+              <code nullFlavor="UNK" />
+              <statusCode nullFlavor="UNK" />
+              <effectiveTime nullFlavor="UNK" />
+              <priorityCode nullFlavor="UNK" />
+              <value xsi:type="CD" />
+            </observation>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

@@ -1,0 +1,34 @@
+stages:
+  - build
+before_script:
+  - cd
+  - 'C:\nuget2017\nuget.exe restore "C:\GitLab-Runner\builds\05f736b5\0\MS\hc_paitent_backend\HC.Application.sln"'
+
+build-dev:
+ stage: build
+ tags:
+    - staging
+ script:
+  - echo "'"C:\Program Files (x86)\MSBuild\15.0\Bin\msbuild" "C:\GitLab-Runner\builds\05f736b5\0\MS\hc_paitent_backend\HC.Application.sln" /t:Rebuild /p:outdir="C:\GitLab-Runner\Projects_SDM\HealthCareStaffing\\" /p:Configuration=Release /p:Platform="Any CPU"'""
+  - echo "'"C:\Program Files (x86)\Microsoft Visual Studio 2017 Prof\MSBuild\15.0\Bin\msbuild" "C:\GitLab-Runner\builds\05f736b5\0\MS\hc_paitent_backend\HC.Application.sln" /t:Rebuild /p:outdir="C:\GitLab-Runner\Projects_SDM\hc_paitent_backend\\" /p:Configuration=Release /p:Platform="Any CPU"'""
+  - cd "C:\Windows\System32\inetsrv"
+  - 'appcmd stop sites "hc_paitent_backend"'
+  - del C:\inetpub\wwwroot\hc_paitent_backend\*.* /S /Q /F
+  - del C:\GitLab-Runner\Projects_SDM\hc_paitent_backend\*.* /S /Q /F
+  - cd "C:\GitLab-Runner\builds\05f736b5\0\MS\hc_paitent_backend\"
+  - 'dotnet publish HC.Application.sln -c release -o "C:\GitLab-Runner\Projects_SDM\hc_paitent_backend"'
+  - 'xcopy /H /S /y /c /q /k /e /f /i C:\GitLab-Runner\Projects_SDM\hc_paitent_backend C:\inetpub\wwwroot\hc_paitent_backend\ '
+  - echo "'xcopy /H /S /y /c /q /k /e /f C:\GitLab-Runner\Projects_SDM\hc_paitent_backend\roslyn C:\inetpub\wwwroot\hc_paitent_backend\bin\roslyn\ '"
+  - cd "C:\Windows\System32\inetsrv"
+  - 'appcmd start sites "hc_paitent_backend"'
+<<<<<<< HEAD
+  - Taskkill /F /IM dotnet.exe
+  - cd C:\GitLab-Runner\builds\05f736b5\0\MS\hc_paitent_backend
+  - C:\GitLab-Runner\sonar-scanner-msbuild-4.3.1.1372-net46\SonarQube.Scanner.MSBuild.exe begin /k:"hc_paitent_backend" /d:sonar.host.url="http://localhost:9000" /d:sonar.login="c7f462316589b4d0b5bec1116e62538c3463b66d" /v:1.1
+  - 'dotnet publish HC.Application.sln -c release -o "C:\GitLab-Runner\Projects_SDM\hc_paitent_backend"'
+  - C:\GitLab-Runner\sonar-scanner-msbuild-4.3.1.1372-net46\SonarQube.Scanner.MSBuild.exe end /d:sonar.login="c7f462316589b4d0b5bec1116e62538c3463b66d"
+=======
+  
+>>>>>>> cc039388e955c8e313c361995406a9501701cf5b
+ only:
+   - staging
